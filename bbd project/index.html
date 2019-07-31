@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/calendar.css">
+</head>   
+<body>
+    <br><br>
+    <div class="container">
+
+        <div class="row">
+            <div class="instructions">
+                <h1 class="text-center">DR fix mypain</h1>
+                
+            </div>
+        </div>
+        <br>
+      
+
+        <br><hr>
+
+        <div class="row">
+            <div class="col offset-md-1">
+                <form id="form_create_appointment">
+                    <div class="form-row">
+                        <div class="col form-group">
+                            <label class="required">Fullname</label>
+                            <input class="form-control date-input" type="text" id="date" data-trigger="hover" data-toggle="popover" title="Date" data-content="You can select any date from today clicking on the number in the calendar" required>
+                        </div>
+                        <div class="col form-group">
+                            <label>Description</label>
+                            <input class="form-control" type="text" id="description">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                 <div class="col form-group">
+                  <label class="required">Appointment Time</label>
+                  <div class='input-group date' id='datetimepicker1'>
+                     <input type='text' class="form-control" />
+                     <span class="input-group-addon">
+                     <span class="glyphicon glyphicon-calendar"></span>
+                     </span>
+                  </div>
+               </div> 
+      
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="form-row">
+                        <div class="col form-group">
+                            <button type="button" class="btn btn-warning btn-block" id="clear" onclick="clear_input()">Clear Form</button>
+                        </div>
+                        <div class="col form-group">
+                            <button type="button" class="btn btn-primary btn-block" id="submit" onclick="make_appointment()">Make  an Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          
+        </div>
+        <br><br><br>
+        
+    </div>
+
+
+
+
+</body>
+
+</html>
+
